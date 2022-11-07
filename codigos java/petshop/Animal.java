@@ -1,15 +1,25 @@
 package petshop;
 
-import java.util.Date;
 
 public class Animal {
-    String nome;
-    String raca;
-    String porte;
-    String tipo;
-    float peso;
-    Date dtnascimento;
-    char sexo;
+    private String nome;
+    private String raca;
+    private String porte;
+    private String tipo;
+    private float peso;
+    private String dtnascimento;
+    private char sexo;
+    
+    public Animal(String nome, String raca, String porte, String tipo, float peso, String dtnascimento, char sexo){
+        this.nome = nome;
+        this.raca = raca;
+        this.porte = porte;
+        this.porte = porte;
+        this.tipo = tipo;
+        this.peso = peso;
+        this.dtnascimento = dtnascimento;
+        this.sexo = sexo;
+    }
 
     public String getNome() {
         return nome;
@@ -51,11 +61,11 @@ public class Animal {
         this.peso = peso;
     }
 
-    public Date getDtnascimento() {
+    public String getDtnascimento() {
         return dtnascimento;
     }
 
-    public void setDtnascimento(Date dtnascimento) {
+    public void setDtnascimento(String dtnascimento) {
         this.dtnascimento = dtnascimento;
     }
 
