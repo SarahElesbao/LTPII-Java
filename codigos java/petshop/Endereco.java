@@ -1,12 +1,21 @@
 package petshop;
 
 public class Endereco {
-    String rua;
-    int numero;
-    String complemento;
-    String bairro;
-    String cidade;
-    int cep;
+    private String rua;
+    private int numero;
+    private String complemento;
+    private String bairro;
+    private String cidade;
+    private int cep;
+
+    public Endereco(String rua, int numero, String complemento, String bairro, String cidade, int cep){
+        this.rua = rua;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.cep = cep;
+    }
 
     public String getRua() {
         return rua;
