@@ -1,41 +1,80 @@
 package petshop;
 
-public class App {
 
-    public static void main(String[] args) {
+public class Animal {
+    private String nome;
+    private String raca;
+    private String porte;
+    private String tipo;
+    private float peso;
+    private String dtnascimento;
+    private char sexo;
+    
+    public Animal(String nome, String raca, String porte, String tipo, float peso, String dtnascimento, char sexo){
+        this.nome = nome;
+        this.raca = raca;
+        this.porte = porte;
+        this.porte = porte;
+        this.tipo = tipo;
+        this.peso = peso;
+        this.dtnascimento = dtnascimento;
+        this.sexo = sexo;
+    }
 
-        Endereco endereco = new Endereco("rua são paulão", 325, "fundos", "pavuna", "rio de janeiro", 34561233);
-        // endereco.rua = "Rua da Sarah";
-        // endereco.numero = 443;
-        // endereco.complemento = "fundos";
-        // endereco.bairro = "Pavuna";
-        // endereco.cidade = "Rio de Janeiro";
-        // endereco.cep = 21534289;
+    public String getNome() {
+        return nome;
+    }
 
-        Animal animal = new Animal("mirabel", "gato", "pequeno", "siamês", 5, "16/02/2020", 'm');
-        // animal.nome = "mirabel";
-        // animal.raca = "gato";
-        // animal.porte = "pequeno";
-        // animal.tipo = "siamês";
-        // animal.peso = 4;
-        // dtnascimento = 01/02/2020;
-        // animal.sexo = 'm';
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-        //Pessoa pessoa = new Pessoa("Sarah Elesbão", 40028922, endereco, animal);
-        // pessoa.nome = "Sarah Elesbão";
-        // pessoa.telefone = 40028922;
-        // pessoa.cpf = "173.482.734-96";
-        // pessoa.moradia = endereco;
-        // pessoa.bicho = animal;
+    public String getRaca() {
+        return raca;
+    }
 
-        // pessoa.moradia = endereco;
-        Juridica juridica = new Juridica("59.927.884/0001-77", "Sarah Elesbão", 40028922, endereco, animal);
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
 
-        Fisica fisica = new Fisica("437.715.400-11", "Sarah Elesbão", 40028922, endereco, animal);
+    public String getPorte() {
+        return porte;
+    }
 
-        //pessoa.info();
-        fisica.info();
-        juridica.info();
+    public void setPorte(String porte) {
+        this.porte = porte;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public String getDtnascimento() {
+        return dtnascimento;
+    }
+
+    public void setDtnascimento(String dtnascimento) {
+        this.dtnascimento = dtnascimento;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
     }
 
 }
